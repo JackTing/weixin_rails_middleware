@@ -10,11 +10,9 @@ module WeixinRailsMiddleware
     end
 
     def token_model_class
+      return nil if token_string.present?
       raise "You need to config `token_model` in config/initializers/weixin_rails_middleware.rb" if token_model.blank?
       token_model_c = token_model.constantize
-      unless token_model_c.table_exists?
-        raise "You don't have #{token_model_c.table_name} table"
-      end
       token_model_c
     end
 
