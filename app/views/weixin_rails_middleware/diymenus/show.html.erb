@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Public account:</strong>
+  <%= @diymenu.public_account_id %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @diymenu.parent_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @diymenu.title %>
+</p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @diymenu.keyword %>
+</p>
+
+<p>
+  <strong>Is show:</strong>
+  <%= @diymenu.is_show %>
+</p>
+
+<p>
+  <strong>Sort:</strong>
+  <%= @diymenu.sort %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @diymenu.url %>
+</p>
+
+<%= link_to 'Edit', edit_diymenu_path(@diymenu) %> |
+<%= link_to 'Back', diymenus_path %>
