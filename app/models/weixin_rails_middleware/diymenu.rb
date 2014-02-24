@@ -1,5 +1,4 @@
 module WeixinRailsMiddleware
-  class Diymenus < ActiveRecord::Base
-
+  class Diymenu < ActiveRecord::Base
   end
 end
